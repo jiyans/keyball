@@ -60,8 +60,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #        define RGBLIGHT_SAT_STEP   17
 #    endif
 #endif
+#define RGB_MATRIX_LED_COUNT 46
 #ifdef RGB_MATRIX_ENABLE
-#    define RGB_MATRIX_SPLIT    { 24, 24 }
+#    define RGB_MATRIX_SPLIT    { 24, 22 }
 #endif
 
 #ifndef OLED_FONT_H
