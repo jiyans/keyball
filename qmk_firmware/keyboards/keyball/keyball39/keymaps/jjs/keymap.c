@@ -27,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_Q         , KC_W       , KC_E        , KC_R         , KC_T          ,                            KC_Y     , KC_U        , KC_I        , KC_O        , KC_P     ,
     LCTL_T(KC_A) ,LSFT_T(KC_S), LALT_T(KC_D),LGUI_T(KC_F)  , KC_G          ,                            KC_H     , RGUI_T(KC_J), RALT_T(KC_K), RSFT_T(KC_L), RCTL_T(KC_SCLN),
     KC_Z         , KC_X       , KC_C        , KC_V         , KC_B          ,                            KC_N     , KC_M        , KC_COMM     , KC_DOT      , KC_SLSH  ,
-                         KC_LCTL      ,TT(2)       , TT(2), LT(3,KC_LNG2), LT(1,KC_LNG1), LGUI_T(KC_SPC),                    KC_BSPC  , LT(2,KC_ENT), LT(2,KC_ENT), LT(2,KC_ENT), LT(2,KC_ENT), LT(3,KC_SPC)
+                         KC_LCTL      ,TT(2)       , TT(2), LT(3,KC_LNG2), LT(1,KC_LNG1), LT(2, KC_SPC),                    KC_BSPC  , LT(2,KC_ENT), LT(2,KC_ENT), LT(2,KC_ENT), LT(2,KC_ENT), LT(3,KC_SPC)
   ),
 
   [1] = LAYOUT_universal(KC_GRV    , KC_F2    , KC_F3    , KC_F4    , KC_RBRC  ,                            KC_LBRC    , KC_F7    , KC_F8    , KC_F9    , KC_RBRC   ,
