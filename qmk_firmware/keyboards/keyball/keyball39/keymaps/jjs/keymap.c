@@ -40,7 +40,7 @@ KC_INT1, KC_EQL, S(KC_3), KC_LNG2, _______, _______, _______, _______, KC_LNG2, 
  [2] = LAYOUT_universal(
     KC_TAB   , KC_7     , KC_8     , KC_9     , KC_0  ,                            KC_NUHS  , _______  , KC_BTN3  , _______  , KC_BSPC  ,
                         KC_ESC, KC_4     , KC_5     , KC_6     ,S(KC_SCLN),                            S(KC_9)  , KC_BTN1  , S(KC_0)    , KC_BTN2  , KC_QUOT  ,
-    KC_SLSH  , KC_1     , KC_2     , KC_3     ,KC_MINS ,                          KC_EQL, KC_LEFT  , KC_DOWN  , KC_RGHT  , _______  ,
+    KC_SLSH  , KC_1     , KC_2     , KC_3     ,KC_MINS ,                          KC_EQL, KC_LEFT  , KC_DOWN  , KC_DOT, _______  ,
     KC_ESC   , KC_0     , KC_DOT   , KC_DEL   , KC_ENT   , KC_BSPC  ,      _______  , TO(0)    , _______  , _______  , _______  , _______
   ),
 
