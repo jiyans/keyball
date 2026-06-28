@@ -37,15 +37,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
  [2] = LAYOUT_universal(
-    KC_TAB   , KC_7     , KC_8     , KC_9     , KC_0  ,                            KC_NUHS  , _______  , KC_BTN3  , _______  , KC_BSPC  ,
-                        KC_ESC, KC_4     , KC_5     , KC_6     ,S(KC_SCLN),                            S(KC_9)  , KC_BTN1  , S(KC_0)    , KC_BTN2  , KC_QUOT  ,
-    KC_SLSH  , KC_1     , KC_2     , KC_3     ,KC_MINS ,                          KC_EQL, KC_LEFT  , KC_DOWN  , KC_DOT, _______  ,
-    KC_ESC   , KC_0     , KC_DOT   , KC_DEL   , KC_ENT   , KC_BSPC  ,      _______  , TO(0)    , _______  , _______  , _______  , _______
+    KC_TAB        , KC_7                , KC_8               , KC_9                    ,      KC_0   ,  KC_NUHS  , KC_BTN1  , KC_BTN3       , KC_BTN2         , KC_BSPC  ,
+    LCTL_T(KC_ESC), LSFT_T( KC_4 )      , LALT_T(KC_5)       , LGUI_T(KC_6), S(KC_SCLN),      KC_LEFT,  RGUI_T( KC_DOWN )   , RALT_T(KC_UP) , RSFT_T(KC_RIGHT), RCTL_T(KC_QUOT)  ,
+    KC_SLSH       , KC_1                , KC_2               , KC_3     ,KC_MINS       ,      KC_EQL ,  KC_LEFT             , KC_DOWN       , KC_RIGHT        , _______  ,
+    KC_ESC        , KC_0     , KC_DOT   , KC_DEL   , KC_ENT  , KC_BSPC  , _______      ,      TO(0)  ,   _______            , _______       , _______         , _______
   ),
+
+ 
 
   [3] = LAYOUT_universal(
     RM_TOGG  , AML_TO   , AML_I50  , AML_D50  , _______  ,                            _______  , _______  , SSNP_HOR , SSNP_VRT , SSNP_FRE ,
-                         RGB_MOD  , RGB_HUI  , RGB_SAI  , RGB_VAI  , SCRL_DVI ,                            KC_LEFT, KC_DOWN  , KC_UP  , KC_RIGHT  , _______  ,
+   RGB_MOD   , RGB_HUI  , RGB_SAI  , RGB_VAI  , SCRL_DVI ,                            KC_LEFT, KC_DOWN  , KC_UP  , KC_RIGHT  , _______  ,
     RGB_RMOD , RGB_HUD  , RGB_SAD  , RGB_VAD  , SCRL_DVD ,                            CPI_D1K  , CPI_D100 , CPI_I100 , CPI_I1K  , KBC_SAVE ,
     QK_BOOT  , KBC_RST  , _______  , _______  , _______  , _______  ,      _______  , _______  , _______  , _______  , KBC_RST  , QK_BOOT
   ),
@@ -62,7 +64,6 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 
 #include "lib/oledkit/oledkit.h"
 #include "oled_art.h"
-
 static void render_oled_status(void) {
     keyball_oled_render_keyinfo();
     keyball_oled_render_ballinfo();
